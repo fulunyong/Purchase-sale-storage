@@ -1,10 +1,11 @@
 package com.liujl.purchasesalestorage.dao;
 
 import com.liujl.purchasesalestorage.domain.User;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
-@Mapper
-public interface UserDao {
-
-    User selectUserByName(String name);
+/**
+ * UserDAO继承基类
+ */
+@Repository
+public interface UserDAO extends MyBatisBaseDao<User, Integer> {
 }
