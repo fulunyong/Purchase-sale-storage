@@ -1,17 +1,23 @@
 package com.liujl.purchasesalestorage.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * CORS 全局配置
- * 解决跨域
+ * <p>
+ * </p>
+ *
+ * @author: Liu Junlong
+ * @date: 2019/3/17 11:50
  */
 @Configuration
-public class MyWebAppConfigurer {
+public class MyWebAppConfig {
+    /**
+     * CORS 全局配置
+     * 解决跨域
+     */
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
@@ -29,5 +35,5 @@ public class MyWebAppConfigurer {
             }
         };
     }
-
 }
+
